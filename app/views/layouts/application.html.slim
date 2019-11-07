@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title
+      | Ben | tranquangvu
+    meta property='og:type' content='article'
+    meta property='og:image' content=asset_pack_path('media/images/me/gallery/img03.jpg')
+    meta property='og:image:width' content='960'
+    meta property='og:image:height' content='960'
+    meta property='og:url' content='https://qvtran.tech'
+    meta property='og:title' content='Ben - Tranquangvu resume'
+    meta property='og:description' content='Short infomation about Ben - Tranquangvu'
+    meta content=('text/html; charset=UTF-8') http-equiv='Content-Type'
+    meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body.is-preload
+    = yield
